@@ -15,14 +15,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           version: 12
-      - run: npm install
+        run: npm install
       - name: Publish if version has been updated
-        uses: pascalgn/npm-publish-action@06e0830ea83eea10ed4a62654eeaedafb8bf50fc
-        with: # All of theses inputs are optional
-          tag_name: "v%s"
-          tag_message: "v%s"
-          commit_pattern: "^Release (\\S+)"
-          workspace: "."
+        run: "npm publish --access public"
         env: # More info about the environment variables in the README
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this as is, it's automatically generated
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }} # You need to set this in your repo settings
