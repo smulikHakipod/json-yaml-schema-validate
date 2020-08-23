@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           version: 12
-      - run: npm install
+      - run: npm install && npm run build
   npm-publish:
     name: npm-publish
     needs: ["compile"]
