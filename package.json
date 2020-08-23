@@ -1,11 +1,11 @@
 {
   "name": "json-yaml-schema-validate",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "",
   "main": "index.js",
   "scripts": {
     "prepare": "npm run build",
-    "build": "tsc",
+    "build": "node ./node_modules/typescript/bin/tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
