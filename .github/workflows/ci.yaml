@@ -14,7 +14,8 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          version: 12
+          node-version: '10.x'
+          registry-url: 'https://registry.npmjs.org'
       - name: "npm install"
         run: npm install
       - name: Publish if version has been updated
