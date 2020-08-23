@@ -1,9 +1,10 @@
 {
   "name": "json-yaml-schema-validate",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "npm run build",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
