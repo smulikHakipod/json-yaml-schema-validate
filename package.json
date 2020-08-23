@@ -1,13 +1,13 @@
 {
   "name": "json-yaml-schema-validate",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "json-yaml-schema-validate": "dist/json-yaml-schema-validate.js"
+    "json-yaml-schema-validate": "./dist/json-yaml-schema-validate.js"
   },
   "keywords": [],
   "author": "",

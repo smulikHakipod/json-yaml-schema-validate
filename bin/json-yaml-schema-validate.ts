@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import Ajv from 'ajv';
 import yargs = require('yargs');
 import fs = require('fs');
